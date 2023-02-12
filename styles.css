@@ -99,7 +99,10 @@ nav {
     left: 0;
     background: var(--background);
     width: 100%;
-    display: none;
+    /* display: none; */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform  400ms ease-in-out;
 }
 
 nav ul {
@@ -119,6 +122,8 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
@@ -127,7 +132,70 @@ nav a:hover {
 
 
 .nav-toggle:checked ~ nav {
-    display: block;
+    /* display: block; */
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .header {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 1em;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        /* bottom: -.75em; */
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        /* transform-origin: right; */
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
 }
 
 
