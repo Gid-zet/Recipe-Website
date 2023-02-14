@@ -13,11 +13,13 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
+*/
 
-img {
+/* img {
     max-width: 100%;
     display: block;
-} */
+
+}  */
 
 :root {
     --background: rgba(85, 214, 170, .85);
@@ -29,18 +31,23 @@ img {
 
 body {
     margin: 0;
-    background: #222;
+    /* background: #222; */
     font-family: sans-serif;
     font-weight: 400;
 }
 
-.content {
-    height: 200vh;
-    background-image: url(/recipes/images/Easy\ peasy\ Nigerian\ Party\ Jollof\ Basmati\ Rice.jpeg);
-    background-color: #333;
-    background-blend-mode: multiply;
-    display: grid;
-    place-items: center;
+.img-content {
+    height: 100vh;
+    background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
+    /* background-color: #333; */
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    /* display: grid; */
+    /* place-items: center; */
+    padding: 20em;
+    /* outline: 2px solid black; */
+    background-size: cover;
+    
 }
 
 /* navigation styles start here */
@@ -51,6 +58,11 @@ header {
     position: fixed;
     z-index: 999;               /*This ensures the header is always on top of everyhing else */
     width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
 }
 
 .nav-toggle {
@@ -141,6 +153,44 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+.image-two {
+    height: 100vh;
+    background-image: url(recipes/images/pexels-pixabay-235925.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    padding: 20em;
+    background-position: center;
+}
+
+
+.content {
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.content-one {
+    padding: 2em;
+}
+
+.content-two {
+    padding: 2em;
+
+}
+
+.content-three {
+    padding: 2em;
+
+}
+
+.container {
+    padding: 5em;
+    margin: 3em;
+}
+
+
+
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
@@ -196,6 +246,18 @@ nav a:hover {
         margin-left: 3em;
         margin-bottom: 0;
     }
+
+
+    .content {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        font-size: 2.1ch;
+        padding: 5em;
+    }
+
+   
+
+
 }
 
 
