@@ -241,11 +241,11 @@ footer {
 
 
 
-/* The Rice(Our products) starts here */
+/* Our products page starts here */
 
 .bg-image {
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),
-    url(recipes/images/pexels-pixabay-164504.jpg);
+    url(recipes/images/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -258,8 +258,36 @@ footer {
 }
 
 .our-prod-content {
+    margin: 3em;
     padding: 2em;
+    display: grid;
+    gap: 1rem;
 }
+
+.box {
+    /* margin: 10em; */
+    width: 250px;
+    padding: 1em;
+    font-size: 1.2rem;
+    box-shadow: 20px 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: #ffffff;
+    
+}
+
+/* Kingstar diff color */
+
+.kingstar-pak {
+    background-color: rgb(233, 202, 64);
+    color: #000;
+}
+ 
+
+
+
+
+
 
 
 
@@ -335,6 +363,17 @@ footer {
         
     }
 
+    
+    /* Our products page starts here */
+
+    .our-prod-content {
+        margin: 3em 15em 0em 15em;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        font-size: 2.1ch;
+        padding: 5em;
+        
+    }
    
 
 
