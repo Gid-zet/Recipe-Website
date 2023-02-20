@@ -262,10 +262,33 @@ footer {
     padding: 2em;
     display: grid;
     gap: 1rem;
+    justify-content: center;
+}
+
+.our-prod-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+
+}
+
+.our-prod-head::after {
+    content: '';
+    height: 5px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--background);
+    bottom: 0em;
+}
+
+.two {
+    margin-top: 0;
 }
 
 .box {
-    /* margin: 10em; */
+    margin: .5em;
     width: 250px;
     padding: 1em;
     font-size: 1.2rem;
@@ -277,13 +300,7 @@ footer {
     
 }
 
-.box:hover {
-    color: #ffffff;
-    background-color: #000;
-    box-shadow: 20px 20px var(--background);
-    
 
-}
 
 /* Kingstar diff color */
 
@@ -292,9 +309,10 @@ footer {
     color: #000;
 }
 
-.supreme {
-    margin-top: 2em;
-}
+
+/* .supreme {
+    margin-top: .5em;
+} */
  
 
 
@@ -386,13 +404,41 @@ footer {
     /* Our products page starts here */
 
     .our-prod-content {
-        margin: 3em 15em 0em 15em;
+        margin: 0em 15em 0em 15em;
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
         font-size: 2.1ch;
-        padding: 5em;
+        padding: 3em;
         
     }
+    
+
+    .box {
+        
+        background-color: #ffffff;
+        border-radius: 20px;
+        color: #000;
+        border: 2px solid #000;
+        transition: box-shadow 150ms ease;
+        
+    }
+
+    .box:hover {
+        color: #ffffff;
+        background-color: #000;
+        box-shadow: 20px 20px var(--background);
+        
+    
+    }
+
+    .kingstar-pak:hover {
+        color: #ffffff;
+        background-color: #000;
+        box-shadow: 20px 20px rgb(233, 202, 64);
+    
+    }
+
+    
    
 
 
