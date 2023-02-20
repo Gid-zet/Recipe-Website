@@ -269,11 +269,20 @@ footer {
     width: 250px;
     padding: 1em;
     font-size: 1.2rem;
-    box-shadow: 20px 20px;
-    background-color: black;
+    background-color: #ffffff;
     border-radius: 20px;
-    color: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+    transition: box-shadow 150ms ease;
     
+}
+
+.box:hover {
+    color: #ffffff;
+    background-color: #000;
+    box-shadow: 20px 20px var(--background);
+    
+
 }
 
 /* Kingstar diff color */
@@ -281,6 +290,10 @@ footer {
 .kingstar-pak {
     background-color: rgb(233, 202, 64);
     color: #000;
+}
+
+.supreme {
+    margin-top: 2em;
 }
  
 
@@ -291,7 +304,7 @@ footer {
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
     .nav-toggle-label {
         display: none;
     }
@@ -345,6 +358,12 @@ footer {
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
+    }
+
+    .img-content {
+        width: 100vw;
+        
+        
     }
 
 
