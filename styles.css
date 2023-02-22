@@ -274,14 +274,14 @@ footer {
 
 }
 
-.our-prod-head::after {
+/* .our-prod-head::after {
     content: '';
     height: 5px;
     width: 150px;
     position: absolute;
     background-color: var(--background);
     bottom: 0em;
-}
+} */
 
 .two {
     margin-top: 0;
