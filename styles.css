@@ -327,6 +327,25 @@ footer {
     /* display: none; */
 }
     
+/* About us starts here */
+
+.about-us {
+    font-size: 15vw;
+    background-image: url(recipes/images/pexels-pixabay-164504.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-container {
+    
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
