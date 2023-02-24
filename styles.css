@@ -21,7 +21,7 @@ body {
     height: 100vh;
     background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
     background-repeat: no-repeat;
-    padding: 20em;
+    padding: 2em;
     background-size: cover;
     
 }
@@ -135,7 +135,7 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    padding: 20em;
+    padding: 0em;
     background-position: center;
     border-radius: 10px 10px;
 }
@@ -249,13 +249,15 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    padding: 2em;
+    padding: 3em;
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .our-prod-content {
     margin: 3em;
@@ -348,6 +350,59 @@ footer {
 }
 
 
+/* Availability starts here */
+
+.available-link {
+    /* text-decoration: none; */
+    color: #ec5d39;
+}
+
+.table-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px lightgrey;
+    background-color: #ffffff;
+    text-align: left;
+    overflow: hidden;
+}
+
+thead {
+    box-shadow: 0 5px 10px lightgrey;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+.green {
+    border-radius: 5px;
+    background-color: rgb(101, 228, 101);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.red {
+    border-radius: 5px;
+    background-color: rgb(184, 83, 83);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    color: #ffffff;
+}
 
 
  
@@ -480,6 +535,19 @@ footer {
         box-shadow: 20px 20px rgb(233, 202, 64);
     
     } */
+
+    
+    /* Availability */
+
+    th {
+        padding: 1rem 10rem;
+    }
+
+
+    td {
+        padding: 1rem 10rem;
+    }
+
 
     
    
