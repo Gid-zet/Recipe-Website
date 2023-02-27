@@ -141,9 +141,8 @@ nav a:hover {
 
 .txt-container {
     /* background-color: red; */
-    width: 800px;
+    top: 10em;
     position: absolute;
-    right: 5em;
     font-family: 'Rampart One', cursive;
 
 }
@@ -534,6 +533,17 @@ td {
         align-items: center;
         text-align: center;
          
+    }
+
+
+
+    .txt-container {
+        /* background-color: red; */
+        width: 800px;
+        position: absolute;
+        right: 5em;
+        font-family: 'Rampart One', cursive;
+        
     }
 
 
