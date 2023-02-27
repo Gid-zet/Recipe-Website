@@ -298,7 +298,7 @@ footer {
     margin: .5em;
     width: 250px;
     padding: 1em;
-    font-size: 1.2rem;
+    font-size: .85rem;
     background-color: #000;
     border-radius: 20px;
     color: #ffffff;
@@ -510,6 +510,7 @@ td {
         position: relative;
         background-color: #000;
         border-radius: 20px;
+        font-size: 1.1rem;
         color: #ffffff;
         border: 2px solid #000;
         transition: box-shadow 150ms ease;
