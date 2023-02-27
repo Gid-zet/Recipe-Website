@@ -134,10 +134,9 @@ nav a:hover {
     background-image: url(recipes/images/pexels-pixabay-247597.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     padding: 0em;
     background-position: center;
-    border-radius: 10px 10px;
 }
 
 .content-container {
@@ -155,7 +154,7 @@ nav a:hover {
 .mission-container {
     padding: 2em;
     margin: 2em;
-    font-size: .85rem;
+    font-size: 1rem;
 }
 
 
@@ -490,6 +489,7 @@ td {
         padding: 5em;
         justify-content: center;
         align-items: center;
+        font-size: 2.1ch;
         
     }
 
