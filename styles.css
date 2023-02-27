@@ -144,7 +144,7 @@ nav a:hover {
     display: grid;
     gap: 1rem;
     padding: 0 1em 0em 1em;
-    font-size: .85rem;
+    font-size: 1rem;
     
 }
 
@@ -264,8 +264,8 @@ footer {
 
 
 .our-prod-content {
-    margin: 3em;
-    padding: 2em;
+    margin: 2em;
+    /* padding: 2em; */
     display: grid;
     gap: 1rem;
     justify-content: center;
@@ -298,7 +298,7 @@ footer {
     margin: .5em;
     width: 250px;
     padding: 1em;
-    font-size: .85rem;
+    font-size: .9rem;
     background-color: #000;
     border-radius: 20px;
     color: #ffffff;
@@ -510,7 +510,7 @@ td {
         position: relative;
         background-color: #000;
         border-radius: 20px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #ffffff;
         border: 2px solid #000;
         transition: box-shadow 150ms ease;
