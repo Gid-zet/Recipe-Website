@@ -12,7 +12,7 @@ body {
     width: 100%;
     margin: 0;
     /* background: blue; */
-    font-family: sans-serif;
+    /* font-family: 'Rampart One', cursive; */
     font-weight: 400;
     overflow-x: hidden;
 }
@@ -26,6 +26,7 @@ header {
     position: fixed;
     z-index: 999;               /*This ensures the header is always on top of everyhing else */
     width: 100%;
+    /* font-family: 'Rampart One', cursive; */
 }
 
 .logo {
@@ -126,7 +127,7 @@ nav a:hover {
 
 .img-content {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)), url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
     /* background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg); */
     background-repeat: no-repeat;
     padding: 5em;
@@ -135,7 +136,18 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    position: relative;
 }
+
+.txt-container {
+    /* background-color: red; */
+    width: 800px;
+    position: absolute;
+    right: 5em;
+    font-family: 'Rampart One', cursive;
+
+}
+
 
 .content-container {
     display: grid;
@@ -144,12 +156,22 @@ nav a:hover {
     font-size: 14px;
     font-weight: 400;
     /* line-height: 19px; */
-    text-size-adjust: 100%;
-    -webkit-box-direction: normal;
+    /* text-size-adjust: 100%; */
+    /* -webkit-box-direction: normal; */
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    text-align: center;
+    /* font-family: 'Lobster', cursive; */
     
+}
+
+.txt {
+    color: var(--background);
+    font-family: 'Lobster', cursive;
+}
+
+.paragraph {
+    font-family: 'Tilt Neon', cursive;
 }
 
 .content {
@@ -169,6 +191,15 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    position: relative;
+}
+
+.txt-two-container{
+    color: #000;
+    width: 800px;
+    position: absolute;
+    right: 5em;
+    font-family: 'Rampart One', cursive;
 }
 
 
@@ -277,6 +308,10 @@ footer {
     align-items: center;
 }
 
+.prod {
+    font-family: 'Rampant One', cursive;
+}
+
 
 
 .our-prod-content {
@@ -293,6 +328,8 @@ footer {
     align-items: center;
     margin-top: 3em;
     position: relative;
+    font-family: 'Lobster', cursive;
+    color: var(--background);
 
 }
 
@@ -316,6 +353,7 @@ footer {
     padding: 1em;
     font-size: .9rem;
     background-color: #000;
+    font-family: 'Tilt Neon', cursive;
     /* border-radius: 20px; */
     color: #ffffff;
     border: 2px solid #000;
@@ -495,8 +533,7 @@ td {
         justify-content: center;
         align-items: center;
         text-align: center;
-        
-        
+         
     }
 
 
@@ -554,8 +591,9 @@ td {
     }
 
     .box:hover {
-        color: #ffffff;
-        background-color: #000;
+        color: #000;
+        border-radius: 20px;
+        background-color: #ffffff;
         box-shadow: 20px 20px rgb(81, 128, 11);
         
     }
