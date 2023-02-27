@@ -140,22 +140,25 @@ nav a:hover {
     border-radius: 10px 10px;
 }
 
-.mission-container {
-    padding: 2em;
-    margin: 2em;
-}
-
-
-
 .content-container {
     display: grid;
     gap: 1rem;
+    padding: 0 1em 0em 1em;
+    font-size: .85rem;
     
 }
 
 .content {
     padding: 2em;
 }
+
+.mission-container {
+    padding: 2em;
+    margin: 2em;
+    font-size: .85rem;
+}
+
+
 
 /* Footer */
 footer {
@@ -172,6 +175,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 0 1em 0 1em;
 }
 
 .footer-content h3 {
@@ -362,6 +366,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
+    /* padding: 0 5em 5em 0; */
 }
 
 table {
@@ -403,10 +408,6 @@ td {
     text-align: center;
     color: #ffffff;
 }
-
-
- 
-
 
 
 
