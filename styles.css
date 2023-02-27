@@ -17,14 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-.img-content {
-    height: 100vh;
-    background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
-    background-repeat: no-repeat;
-    padding: 2em;
-    background-size: cover;
-    
-}
 
 /* navigation styles start here */
 
@@ -129,27 +121,56 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.image-two {
+
+/* The content from starts here */
+
+.img-content {
     height: 100vh;
-    background-image: url(recipes/images/pexels-pixabay-247597.jpg);
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)), url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
+    /* background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg); */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    padding: 0em;
-    background-position: center;
+    padding: 5em;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
 
 .content-container {
     display: grid;
     gap: 1rem;
     padding: 0 1em 0em 1em;
-    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 19px; */
+    text-size-adjust: 100%;
+    -webkit-box-direction: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
     
 }
 
 .content {
     padding: 2em;
 }
+
+.image-two {
+    height: 100vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3), url(recipes/images/pexels-pixabay-247597.jpg) ); */
+    background-image: url(recipes/images/pexels-pixabay-247597.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    padding: 5em;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
 
 .mission-container {
     padding: 2em;
@@ -159,7 +180,9 @@ nav a:hover {
 
 
 
-/* Footer */
+/* Footer starts from here*/
+
+
 footer {
     background: black;
     height: auto;
@@ -238,17 +261,11 @@ footer {
 
 
 
-
-
-
-
-
-
 /* Our products page starts here */
 
 .bg-image {
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),
-    url(recipes/images/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
+    url(recipes/images/massimo-adami-sF5M0duT9hI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -299,7 +316,7 @@ footer {
     padding: 1em;
     font-size: .9rem;
     background-color: #000;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     color: #ffffff;
     border: 2px solid #000;
     transition: box-shadow 150ms ease;
@@ -472,6 +489,12 @@ td {
 
     .img-content {
         width: 100vw;
+        font-size: 2rem;
+        padding: 8em;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         
         
     }
@@ -482,6 +505,19 @@ td {
         grid-auto-columns: 1fr;
         font-size: 2.1ch;
         padding: 5em;
+    }
+
+    .image-two {
+        padding: 8em;
+        font-size: 1.2rem;
+        display: block;
+        justify-content: right;
+        text-align: left;
+    }
+
+    .image-two-content {
+        /* background-color: red; */
+        width: 800px;
     }
 
     .mission-container {
@@ -509,7 +545,7 @@ td {
     .box {
         position: relative;
         background-color: #000;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         font-size: 1.2rem;
         color: #ffffff;
         border: 2px solid #000;
