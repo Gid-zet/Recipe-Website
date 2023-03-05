@@ -11,8 +11,6 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    /* background: blue; */
-    /* font-family: 'Rampart One', cursive; */
     font-weight: 400;
     overflow-x: hidden;
 }
@@ -26,7 +24,6 @@ header {
     position: fixed;
     z-index: 999;               /*This ensures the header is always on top of everyhing else */
     width: 100%;
-    /* font-family: 'Rampart One', cursive; */
 }
 
 .logo {
@@ -43,7 +40,8 @@ header {
     top: 0;
     left: 0;
     margin-left: 1em;
-    height: 100%;display: flex;
+    height: 100%;
+    display: flex;
     align-items: center;
 }
 
@@ -615,6 +613,10 @@ td {
 
     
     /* Our products page starts here */
+
+    .prod {
+        font-family: 'Rampant One', cursive;
+    }
 
     .our-prod-content {
         margin: 0em 15em 0em 15em;
