@@ -124,7 +124,7 @@ nav a:hover {
 /* The content from starts here */
 
 .img-content {
-    height: 100vh;
+    height: 100svh;
     background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url(recipes/images/pexels-dodo-phanthamaly-916406.jpg);
     /* background-image: url(recipes/images/pexels-dodo-phanthamaly-916406.jpg); */
     background-repeat: no-repeat;
@@ -151,7 +151,8 @@ nav a:hover {
     display: grid;
     gap: 1rem;
     padding: 0 1em 0em 1em;
-    font-size: 14px;
+    font-size: clamp(1rem, 5w + 1rem, 2rem);
+    /* font-size: 14px; */
     font-weight: 400;
     line-height: 19px;
     text-size-adjust: 100%; 
@@ -372,6 +373,10 @@ footer {
     
 }
 
+.box > p{
+    color: rgb(63, 63, 60);
+}
+
 .available-link {
     display: inline-block;
     background-color: var(--background);
@@ -440,6 +445,18 @@ table {
     background-color: #ffffff;
     text-align: left;
     overflow: hidden;
+}
+
+.red {
+    background-color: rgb(175, 66, 66);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: rgb(73, 194, 73);
+    padding: 1em;
+    border-radius: 10px;
 }
 
 thead {
@@ -540,7 +557,7 @@ td {
         display: grid;
         grid-template-columns: repeat(3, 33.3%);
         margin-top: 10em;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         transform: scale(0.9);
     }
 
